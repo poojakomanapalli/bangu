@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Basic Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to a Basic HTML Page</h1>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="card">
+      <h2>About</h2>
+      <p>This is a minimal, self-contained HTML template with simple styling. Use it as a starting point for small projects.</p>
+    </section>
+
+    <section id="features" class="card">
+      <h2>Features</h2>
+      <ul>
+        <li>Responsive meta tag</li>
+        <li>Simple CSS for layout</li>
+        <li>Header, main content, and footer</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <form id="contactForm">
+        <label>
+          Name
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="3" required></textarea>
+        </label>
+        <button type="submit">Send</button>
+        <div id="formMsg" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Basic HTML — All rights reserved
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
